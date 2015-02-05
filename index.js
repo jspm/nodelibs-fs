@@ -1,5 +1,5 @@
 if (System._nodeRequire)
-  return module.exports = require('fs');
+  return module.exports = System._nodeRequire('fs');
 
 exports.readFileSync = function(address) {
   var output;
