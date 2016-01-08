@@ -1,3 +1,9 @@
 {
-  "registry": "npm"
+  "main": "./fs.js",
+  "registry": "github",
+  "map": {
+    "./fs.js": {
+      "node": "@node/fs"
+    }
+  }
 }
