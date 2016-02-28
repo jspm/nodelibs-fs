@@ -6,7 +6,7 @@ exports.readFileSync = function(address) {
     if (xhr.readyState == 4) {
       var status = xhr.status;
       if ((status > 399 && status < 600) || status == 400) {
-        throw 'File read error on ' + address;
+        throw 'File read error on ' + xhr.responseURL;
       }
       else
         output = xhr.responseText;
