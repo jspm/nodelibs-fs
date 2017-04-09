@@ -14,4 +14,8 @@ exports.readFileSync = function(address) {
   }
   xhr.send(null);
   return output;
-}
+};
+
+exports.realpathSync = function(path) {
+  return require('url').resolve('', path);
+};
